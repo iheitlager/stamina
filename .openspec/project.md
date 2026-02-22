@@ -43,6 +43,7 @@ The library is organized into 4 cohesive domains:
 | [0004](adr/0004-backoff-hook-design.md) | Backoff hook design (bool/float/timedelta) | API simplicity vs overloaded return type |
 | [0005](adr/0005-lazy-hook-initialization.md) | Lazy hook initialization via RetryHookFactory | Zero import cost vs initialization complexity |
 | [0006](adr/0006-testing-mode-cap-semantics.md) | Testing mode with cap semantics | Override simplicity vs cap correctness |
+| [0007](adr/0007-keyword-only-arguments.md) | Keyword-only arguments for retry API | Self-documenting calls vs verbosity |
 
 ## Design Patterns
 

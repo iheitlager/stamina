@@ -21,6 +21,8 @@ The retry core provides the fundamental retry machinery for stamina: the `retry`
 - Exception type matching (single, tuple, or callable predicate)
 - Sync, async, sync generator, and async generator support
 - `datetime.timedelta` support for all time parameters
+- Async library detection (asyncio and Trio) via sniffio
+- Keyword-only arguments to prevent positional mistakes
 
 ## Keywords
 
@@ -198,6 +200,36 @@ When stamina is deactivated (`set_active(False)`), both the `retry` decorator an
 When testing mode is active, all backoff computations MUST return `0.0` (no waiting).
 
 **Implementation**: `src/stamina/_core.py:656-657`, `src/stamina/_core.py:631-633`
+
+### Requirement RC-27: keyword-only arguments
+
+The `retry` function MUST use keyword-only arguments (via `*` in the signature). The `on` parameter has no default, forcing explicit specification. This prevents positional argument errors where exception types could be confused with numeric parameters.
+
+**Implementation**: `src/stamina/_core.py:727` (`def retry(*, on, ...)`)
+
+### Requirement RC-28: async sleep library detection
+
+The async retry path MUST detect the running async library and dispatch to the correct sleep function. When asyncio is detected, it MUST use `asyncio.sleep`. When Trio is detected, it MUST use `trio.sleep`. Detection SHOULD use sniffio when available, falling back to asyncio if sniffio is not installed.
+
+**Implementation**: `src/stamina/_core.py:36-57`
+
+### Requirement RC-29: version metadata
+
+The `stamina.__version__` attribute MUST return the installed package version via `importlib.metadata.version("stamina")`. Accessing it MUST NOT emit deprecation warnings.
+
+**Implementation**: `src/stamina/__init__.py:34-41`
+
+### Requirement RC-30: public type re-exports
+
+The `stamina.typing` module MUST re-export `RetryDetails` and `RetryHook` for public use. These MUST be identical to the types in `stamina.instrumentation`.
+
+**Implementation**: `src/stamina/typing.py:7-10`
+
+### Requirement RC-31: static type safety
+
+The public API MUST be statically type-checkable. A `py.typed` marker file MUST be present for PEP 561 compliance. Type stubs (`tests/typing/api.py`) MUST verify that all public API signatures are correctly typed, including: `retry` decorator on sync/async/generator/async generator functions, `retry_context` with `Attempt.num` (int) and `Attempt.next_wait` (float), `RetryingCaller`/`AsyncRetryingCaller` with typed argument passthrough, `set_active`/`is_active`/`set_testing`/`is_testing`, and `set_on_retry_hooks`/`get_on_retry_hooks`.
+
+**Implementation**: `src/stamina/py.typed`, `tests/typing/api.py`
 
 ---
 
@@ -443,6 +475,54 @@ When testing mode is active, all backoff computations MUST return `0.0` (no wait
 
 **Tests**: `tests/test_async.py::TestAsyncGeneratorFunctionDecoration::test_stops_when_wrapped_generator_is_empty`
 
+### Scenario RC-S31: Async generator athrow suppressed
+
+**Given** an async generator that catches and suppresses a thrown exception
+**When** `athrow(exc)` is called
+**Then** `StopAsyncIteration` MUST be raised (iteration ends cleanly)
+
+**Tests**: `tests/test_async.py::TestAsyncGeneratorFunctionDecoration::test_athrow_that_gets_suppressed`
+
+### Scenario RC-S32: Async generator retry after yield
+
+**Given** an async generator that yields a value then raises on the second iteration
+**When** decorated with `@stamina.retry`
+**Then** the generator MUST restart and yield from the beginning again
+
+**Tests**: `tests/test_async.py::TestAsyncGeneratorFunctionDecoration::test_retries_also_after_yields`
+
+### Scenario RC-S33: Async method retry
+
+**Given** an async method on a class decorated with `@stamina.retry`
+**When** the method raises on the first call
+**Then** it MUST be retried and succeed on the next attempt
+
+**Tests**: `tests/test_async.py::test_retries_method`, `tests/test_async.py::TestAsyncGeneratorFunctionDecoration::test_retries_method`
+
+### Scenario RC-S34: Async retry_context disabled
+
+**Given** stamina is deactivated
+**When** an async `retry_context` block raises
+**Then** exactly one attempt MUST be made and the exception MUST propagate
+
+**Tests**: `tests/test_async.py::test_retry_blocks_can_be_disabled`
+
+### Scenario RC-S35: Version metadata accessible
+
+**Given** stamina is installed
+**When** `stamina.__version__` is accessed
+**Then** it MUST return the correct version string without warnings
+
+**Tests**: `tests/test_packaging.py::test_version`
+
+### Scenario RC-S36: Async backoff hook returns float
+
+**Given** an async function with `on=lambda exc: 0.0`
+**When** the function raises an exception
+**Then** the custom backoff of 0.0 MUST be used (overriding default exponential backoff)
+
+**Tests**: `tests/test_async.py::TestBackoffHookAsync::test_backoff_hook_returns_float_async`
+
 ---
 
 ## Metadata
@@ -452,6 +532,8 @@ When testing mode is active, all backoff computations MUST return `0.0` (no wait
 | File | Lines | Description |
 |------|-------|-------------|
 | `src/stamina/_core.py` | 911 | All retry core logic |
+| `src/stamina/__init__.py` | 42 | Public API exports, version metadata |
+| `src/stamina/typing.py` | 10 | Public type re-exports |
 | `src/stamina/instrumentation/_data.py` | 103 | `guess_name()`, `RetryDetails`, `RetryHook` protocol |
 
 ### Test Coverage
@@ -459,5 +541,7 @@ When testing mode is active, all backoff computations MUST return `0.0` (no wait
 | Test File | Relevant Tests |
 |-----------|----------------|
 | `tests/test_sync.py` | `test_ok`, `test_retries`, `test_wrong_exception`, `test_retry_block`, `test_next_wait`, `test_backoff_computation_clamps`, `test_testing_mode`, `test_timeout_zero_warns`, `test_attempt_next_wait`, `TestMakeStop`, `TestBackoffHookSync`, `TestGeneratorFunctionDecoration` |
-| `tests/test_async.py` | `test_ok`, `test_retries`, `test_retries_method`, `test_wrong_exception`, `test_retry_block`, `test_next_wait`, `test_testing_mode`, `TestBackoffHookAsync`, `TestAsyncGeneratorFunctionDecoration` |
+| `tests/test_async.py` | `test_ok`, `test_retries`, `test_retries_method`, `test_wrong_exception`, `test_retry_block`, `test_next_wait`, `test_testing_mode`, `test_retry_blocks_can_be_disabled`, `TestBackoffHookAsync`, `TestAsyncGeneratorFunctionDecoration` |
+| `tests/test_packaging.py` | `test_version` |
+| `tests/typing/api.py` | Static type-checking stubs (not executed, verified by mypy) |
 | `tests/conftest.py` | `_on` fixture (parametrizes exception matching strategies) |
