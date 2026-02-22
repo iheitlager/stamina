@@ -1,6 +1,6 @@
 {
   "project_name": "stamina",
-  "analysis_date": "2026-02-22T15:01:21.564675Z",
+  "analysis_date": "2026-02-22T16:20:44.819581Z",
   "overall_score": 0.6288521757694361,
   "overall_level": "high",
   "dimension_scores": {
@@ -1920,17 +1920,17 @@
       "module": "noxfile.py",
       "title": "High churn combined with high complexity",
       "evidence": [
-        "Churn rate: 0.248 commits/day",
+        "Churn rate: 0.245 commits/day",
         "Cyclomatic complexity: 14",
         "Total commits: 27"
       ],
       "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
       "drift_type": null,
       "metrics": {
-        "churn_rate": 0.24770642201834864,
+        "churn_rate": 0.24545454545454545,
         "cyclomatic": 14.0,
         "total_commits": 27.0,
-        "churn_score": 0.4954,
+        "churn_score": 0.4909,
         "cc_score": 0.28
       }
     },
@@ -2332,8 +2332,8 @@
     "project_context": {
       "total_modules": 56,
       "total_entities": 703,
-      "total_loc": 17631,
-      "total_commits": 782,
+      "total_loc": 17899,
+      "total_commits": 787,
       "unique_contributors": 9
     }
   }
