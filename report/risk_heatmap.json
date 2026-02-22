@@ -1,0 +1,2763 @@
+{
+  "project_name": "stamina",
+  "module_count": 102,
+  "sort_by": "overall",
+  "min_level": null,
+  "top_n": null,
+  "modules": [
+    {
+      "module": "src/stamina/_core.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_sync.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.01_sync_gen_inner",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.03_sync_inner",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.04_async_inner",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/conftest.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_async.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.04_test_context_manager_hooks_async.02_CM",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.05_test_context_manager_hooks_with_sync_generator_function.02_CM",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.06_test_context_manager_hooks_with_async_generator_function.02_CM",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_structlog.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 1.0,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/__init__.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.9,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "docs/conf.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "noxfile.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/instrumentation/__init__.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/instrumentation/_data.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/instrumentation/_logging.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/instrumentation/_prometheus.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/instrumentation/_structlog.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "tests/test_config.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.9,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.66,
+          "level": "high"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.83,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/_config.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.84,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.82,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/_core.py#13__RetryContextIterator",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.75,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.88,
+          "level": "critical"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.81,
+      "overall_level": "critical"
+    },
+    {
+      "module": "<dependencies>",
+      "dimensions": {
+        "technology": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.8,
+      "overall_level": "critical"
+    },
+    {
+      "module": "src/stamina/typing.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.6,
+          "level": "high"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.8,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_packaging.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.6,
+          "level": "high"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.8,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.79,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.79,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/instrumentation/_hooks.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.8,
+          "level": "critical"
+        },
+        "operational": {
+          "score": 0.5,
+          "level": "medium"
+        }
+      },
+      "overall_score": 0.77,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.75,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.68,
+          "level": "high"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.71,
+      "overall_level": "high"
+    },
+    {
+      "module": "<specs>",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.7,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.7,
+      "overall_level": "high"
+    },
+    {
+      "module": "noxfile.py#06_tests",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.69,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.69,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.02_async_gen_inner",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.36,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.68,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/_core.py#15__make_before_sleep.01_before_sleep",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.34,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.67,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/instrumentation/_logging.py#01_init_logging.01_log_retries",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.33,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.66,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/instrumentation/_structlog.py#01_init_structlog.01_log_retries",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.32,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.66,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/_core.py#17_retry",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.66,
+          "level": "high"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.66,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/instrumentation/_prometheus.py#01_init_prometheus.01_count_retries",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.32,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.66,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.03_test_backoff_hook_returns_timedelta.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.66,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_sync.py#19_TestBackoffHookSync",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.66,
+          "level": "high"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.65,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/typing/api.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.29,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "noxfile.py#08_docs",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/_core.py#02__smart_sleep",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/_core.py#03__TenacityBackoffCallbackAdapter.02___call__",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.06_test_athrow_that_gets_suppressed",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_config.py#03_TestTesting",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.03_test_context_manager_hooks",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.04_test_context_manager_hooks_async",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.05_test_context_manager_hooks_with_sync_generator_function",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.06_test_context_manager_hooks_with_async_generator_function",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_sync.py#02_test_timeout_zero_warns",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_instrumentation.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 1.0,
+          "level": "critical"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.27,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.64,
+      "overall_level": "high"
+    },
+    {
+      "module": "src/stamina/_config.py#02__Config",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.6,
+          "level": "high"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.6,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/__init__.py",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.6,
+          "level": "high"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.6,
+      "overall_level": "high"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.04_test_forwards_athrow",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.58,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.58,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_instrumentation.py#08_TestLogging",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.58,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.58,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#11_test_backoff_computation_clamps",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.58,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.58,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.01_test_ok",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.58,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.58,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.64,
+          "level": "high"
+        },
+        "complexity": {
+          "score": 0.49,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.56,
+      "overall_level": "medium"
+    },
+    {
+      "module": "<project>",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.55,
+          "level": "medium"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.55,
+      "overall_level": "medium"
+    },
+    {
+      "module": "noxfile.py#04_typing_api",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "src/stamina/_core.py#13__RetryContextIterator.01_from_params",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "src/stamina/_core.py#13__RetryContextIterator.05___iter__",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "src/stamina/_core.py#13__RetryContextIterator.06___aiter__",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "src/stamina/_core.py#13__RetryContextIterator.09__jittered_backoff_for_rcs",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#01_test_ok",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#06_test_retry_inactive_block",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#11_test_testing_mode",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#12_test_retry_blocks_can_be_disabled",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#14_test_testing_mode_context",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.01_test_ok",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.03_test_forwards_asend",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#16_TestBackoffHookAsync.02_test_backoff_hook_with_async_retry_context",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_config.py#03_TestTesting.06_test_context_manager_exception",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#06_test_retry_inactive_block",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#12_test_testing_mode",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#15_test_testing_mode_context",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.02_test_retries",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.03_test_retries_also_after_yields",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.05_test_forwards_throw",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.06_test_backoff_hook_returns_none",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.5,
+          "level": "medium"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "src/stamina/instrumentation/_hooks.py#02_get_default_hooks",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.5,
+          "level": "medium"
+        }
+      },
+      "overall_score": 0.5,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.03_test_context_manager_hooks.01_cm1",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.04_test_context_manager_hooks_async.01_cm1",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.05_test_context_manager_hooks_with_sync_generator_function.01_cm1",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.06_test_context_manager_hooks_with_async_generator_function.01_cm1",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#02_test_retries.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#13_TestAsyncRetryingCaller.02_test_retries.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.02_test_retries.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.04_test_forwards_athrow.01_gen",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.07_test_retries_also_after_yields.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#16_TestBackoffHookAsync.01_test_backoff_hook_returns_float_async.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#03_test_retries.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#14_TestRetryingCaller.02_test_retries.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.02_test_retries.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.03_test_retries_also_after_yields.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.05_test_forwards_throw.01_gen",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.01_test_backoff_hook_in_test_mode_returns_zero.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.02_test_backoff_hook_returns_float.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.04_test_backoff_hook_custom_backoff_from_exception.02_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.06_test_athrow_that_gets_suppressed.01_gen",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.10_test_retry_inactive.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    },
+    {
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.07_test_inactive.01_f",
+      "dimensions": {
+        "technology": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "architecture": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "complexity": {
+          "score": 0.31,
+          "level": "medium"
+        },
+        "knowledge": {
+          "score": 0.0,
+          "level": "low"
+        },
+        "operational": {
+          "score": 0.0,
+          "level": "low"
+        }
+      },
+      "overall_score": 0.31,
+      "overall_level": "medium"
+    }
+  ]
+}

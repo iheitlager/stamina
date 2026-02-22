@@ -9,3 +9,5 @@ dist
 t.py
 Justfile
 docs/_build
+.mcp.json
+.claude/settings.local.json

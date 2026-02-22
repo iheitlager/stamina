@@ -1,0 +1,2340 @@
+{
+  "project_name": "stamina",
+  "analysis_date": "2026-02-22T15:01:21.564675Z",
+  "overall_score": 0.6288521757694361,
+  "overall_level": "high",
+  "dimension_scores": {
+    "technology": 0.8,
+    "architecture": 0.7585004892367905,
+    "complexity": 0.38757857142857144,
+    "knowledge": 0.6981818181818182,
+    "operational": 0.5
+  },
+  "dimension_levels": {
+    "technology": "critical",
+    "architecture": "high",
+    "complexity": "medium",
+    "knowledge": "high",
+    "operational": "medium"
+  },
+  "findings": [
+    {
+      "dimension": "technology",
+      "score": 0.8,
+      "level": "critical",
+      "module": "<dependencies>",
+      "title": "86 uncategorized dependencies",
+      "evidence": [
+        "Unknown packages: external:, external:AttributeError, external:Exception, external:RETRIES_TOTAL, external:RuntimeError, external:SystemError, external:TypeError, external:ValueError, external:_config, external:_logging",
+        "Total external deps: 207"
+      ],
+      "remediation": "Audit and categorize external dependencies",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "docs/conf.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "noxfile.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 24"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "noxfile.py#04_typing_api",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6874999999999999,
+      "level": "high",
+      "module": "noxfile.py#06_tests",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.88 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 7"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "noxfile.py#08_docs",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.8437499999999999,
+      "level": "critical",
+      "module": "src/stamina/_config.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.94 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 15"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 47"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "src/stamina/_core.py#02__smart_sleep",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "src/stamina/_core.py#03__TenacityBackoffCallbackAdapter.02___call__",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.75,
+      "level": "high",
+      "module": "src/stamina/_core.py#13__RetryContextIterator",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.90 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 9"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "src/stamina/_core.py#13__RetryContextIterator.01_from_params",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 3",
+        "Efferent coupling (Ce): 12"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "src/stamina/_core.py#13__RetryContextIterator.05___iter__",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "src/stamina/_core.py#13__RetryContextIterator.06___aiter__",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "src/stamina/_core.py#13__RetryContextIterator.09__jittered_backoff_for_rcs",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py#15__make_before_sleep.01_before_sleep",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.01_sync_gen_inner",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.02_async_gen_inner",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 7"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.03_sync_inner",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.04_async_inner",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/__init__.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 10"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_data.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 9"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_hooks.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 11"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_logging.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_logging.py#01_init_logging.01_log_retries",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_prometheus.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 9"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_prometheus.py#01_init_prometheus.01_count_retries",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_structlog.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_structlog.py#01_init_structlog.01_log_retries",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "src/stamina/typing.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/conftest.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 10"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_async.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 20"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#01_test_ok",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#06_test_retry_inactive_block",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#11_test_testing_mode",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#12_test_retry_blocks_can_be_disabled",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#14_test_testing_mode_context",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.7916666666666665,
+      "level": "high",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.92 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 11"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.01_test_ok",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.03_test_forwards_asend",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5833333333333333,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.04_test_forwards_athrow",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.83 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.06_test_athrow_that_gets_suppressed",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_async.py#16_TestBackoffHookAsync.02_test_backoff_hook_with_async_retry_context",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_config.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 12"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_config.py#03_TestTesting",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_config.py#03_TestTesting.06_test_context_manager_exception",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_instrumentation.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 23"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5833333333333333,
+      "level": "medium",
+      "module": "tests/test_instrumentation.py#08_TestLogging",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.83 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.03_test_context_manager_hooks",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.04_test_context_manager_hooks_async",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.04_test_context_manager_hooks_async.02_CM",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.05_test_context_manager_hooks_with_sync_generator_function",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.05_test_context_manager_hooks_with_sync_generator_function.02_CM",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.06_test_context_manager_hooks_with_async_generator_function",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.06_test_context_manager_hooks_with_async_generator_function.02_CM",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_packaging.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_structlog.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 8"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_sync.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 28"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_sync.py#02_test_timeout_zero_warns",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#06_test_retry_inactive_block",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5833333333333333,
+      "level": "medium",
+      "module": "tests/test_sync.py#11_test_backoff_computation_clamps",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.83 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#12_test_testing_mode",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#15_test_testing_mode_context",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.75,
+      "level": "high",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.90 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 9"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5833333333333333,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.01_test_ok",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.83 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 5"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.02_test_retries",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.03_test_retries_also_after_yields",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.05_test_forwards_throw",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.6428571428571426,
+      "level": "high",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.86 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 6"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.03_test_backoff_hook_returns_timedelta.01_f",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 3"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.5,
+      "level": "medium",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.06_test_backoff_hook_returns_none",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 0.80 (threshold: 0.8)",
+        "Afferent coupling (Ca): 1",
+        "Efferent coupling (Ce): 4"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "architecture",
+      "score": 0.9999999999999999,
+      "level": "critical",
+      "module": "tests/typing/api.py",
+      "title": "High instability",
+      "evidence": [
+        "Instability: 1.00 (threshold: 0.8)",
+        "Afferent coupling (Ca): 0",
+        "Efferent coupling (Ce): 53"
+      ],
+      "remediation": "Reduce outgoing dependencies or increase incoming (make module more stable)",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.6000000000000001,
+      "level": "high",
+      "module": "src/stamina/_config.py#02__Config",
+      "title": "High cyclomatic complexity",
+      "evidence": [
+        "Cyclomatic complexity: 10 (threshold: 10.0)",
+        "Entity type: class"
+      ],
+      "remediation": "Extract sub-functions or simplify conditional logic",
+      "drift_type": null,
+      "metrics": {
+        "cyclomatic": 10.0,
+        "loc": 62.0,
+        "cc_density": 0.16129032258064516,
+        "threshold_ratio": 1.0
+      }
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.88,
+      "level": "critical",
+      "module": "src/stamina/_core.py#13__RetryContextIterator",
+      "title": "High cyclomatic complexity",
+      "evidence": [
+        "Cyclomatic complexity: 24 (threshold: 10.0)",
+        "Entity type: class"
+      ],
+      "remediation": "Extract sub-functions or simplify conditional logic",
+      "drift_type": null,
+      "metrics": {
+        "cyclomatic": 24.0,
+        "loc": 160.0,
+        "cc_density": 0.15,
+        "threshold_ratio": 2.4
+      }
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.66,
+      "level": "high",
+      "module": "src/stamina/_core.py#17_retry",
+      "title": "High cyclomatic complexity",
+      "evidence": [
+        "Cyclomatic complexity: 13 (threshold: 10.0)",
+        "Entity type: function"
+      ],
+      "remediation": "Extract sub-functions or simplify conditional logic",
+      "drift_type": null,
+      "metrics": {
+        "cyclomatic": 13.0,
+        "loc": 143.0,
+        "cc_density": 0.09090909090909091,
+        "threshold_ratio": 1.3
+      }
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.66,
+      "level": "high",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator",
+      "title": "High cyclomatic complexity",
+      "evidence": [
+        "Cyclomatic complexity: 13 (threshold: 10.0)",
+        "Entity type: method"
+      ],
+      "remediation": "Extract sub-functions or simplify conditional logic",
+      "drift_type": null,
+      "metrics": {
+        "cyclomatic": 13.0,
+        "loc": 55.0,
+        "cc_density": 0.23636363636363636,
+        "threshold_ratio": 1.3
+      }
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.6799999999999999,
+      "level": "high",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration",
+      "title": "High cyclomatic complexity",
+      "evidence": [
+        "Cyclomatic complexity: 14 (threshold: 10.0)",
+        "Entity type: class"
+      ],
+      "remediation": "Extract sub-functions or simplify conditional logic",
+      "drift_type": null,
+      "metrics": {
+        "cyclomatic": 14.0,
+        "loc": 168.0,
+        "cc_density": 0.08333333333333333,
+        "threshold_ratio": 1.4
+      }
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.66,
+      "level": "high",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync",
+      "title": "High cyclomatic complexity",
+      "evidence": [
+        "Cyclomatic complexity: 13 (threshold: 10.0)",
+        "Entity type: class"
+      ],
+      "remediation": "Extract sub-functions or simplify conditional logic",
+      "drift_type": null,
+      "metrics": {
+        "cyclomatic": 13.0,
+        "loc": 109.0,
+        "cc_density": 0.11926605504587157,
+        "threshold_ratio": 1.3
+      }
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.48524999999999996,
+      "level": "medium",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks",
+      "title": "Oversized entity",
+      "evidence": [
+        "Lines of code: 247 (threshold: 200)",
+        "Entity type: class"
+      ],
+      "remediation": "Split into smaller, focused units",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.33599999999999997,
+      "level": "medium",
+      "module": "src/stamina/_core.py#15__make_before_sleep.01_before_sleep",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 18"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.41,
+      "level": "medium",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 55"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.36,
+      "level": "medium",
+      "module": "src/stamina/_core.py#17_retry.01_retry_decorator.02_async_gen_inner",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 30"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.328,
+      "level": "medium",
+      "module": "src/stamina/instrumentation/_logging.py#01_init_logging.01_log_retries",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 14"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.318,
+      "level": "medium",
+      "module": "src/stamina/instrumentation/_prometheus.py#01_init_prometheus.01_count_retries",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 9"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.322,
+      "level": "medium",
+      "module": "src/stamina/instrumentation/_structlog.py#01_init_structlog.01_log_retries",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 11"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_async.py#02_test_retries.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_async.py#13_TestAsyncRetryingCaller.02_test_retries.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.02_test_retries.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.04_test_forwards_athrow.01_gen",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.31,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.06_test_athrow_that_gets_suppressed.01_gen",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 5"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.07_test_retries_also_after_yields.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.31,
+      "level": "medium",
+      "module": "tests/test_async.py#15_TestAsyncGeneratorFunctionDecoration.10_test_retry_inactive.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 5"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_async.py#16_TestBackoffHookAsync.01_test_backoff_hook_returns_float_async.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.314,
+      "level": "medium",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.03_test_context_manager_hooks.01_cm1",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 7"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.314,
+      "level": "medium",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.04_test_context_manager_hooks_async.01_cm1",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 7"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.314,
+      "level": "medium",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.05_test_context_manager_hooks_with_sync_generator_function.01_cm1",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 7"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.314,
+      "level": "medium",
+      "module": "tests/test_instrumentation.py#09_TestSetOnRetryHooks.06_test_context_manager_hooks_with_async_generator_function.01_cm1",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 7"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#03_test_retries.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#14_TestRetryingCaller.02_test_retries.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.02_test_retries.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.03_test_retries_also_after_yields.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.05_test_forwards_throw.01_gen",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.31,
+      "level": "medium",
+      "module": "tests/test_sync.py#16_TestGeneratorFunctionDecoration.07_test_inactive.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 5"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.01_test_backoff_hook_in_test_mode_returns_zero.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.02_test_backoff_hook_returns_float.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.03_test_backoff_hook_returns_timedelta.01_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "complexity",
+      "score": 0.312,
+      "level": "medium",
+      "module": "tests/test_sync.py#19_TestBackoffHookSync.04_test_backoff_hook_custom_backoff_from_exception.02_f",
+      "title": "Potentially dead code",
+      "evidence": [
+        "No incoming calls detected (fan-in: 0)",
+        "Lines of code: 6"
+      ],
+      "remediation": "Verify if still needed; remove if unused to reduce maintenance burden",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "docs/conf.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 5"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 5.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "noxfile.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 24"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 24.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/__init__.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 18"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 18.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/_config.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 16"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 16.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/__init__.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 10"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 10.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_data.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 9"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 9.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_hooks.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 11"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 11.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_logging.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 5"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 5.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_prometheus.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 9"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 9.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "src/stamina/instrumentation/_structlog.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 5"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 5.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.6,
+      "level": "high",
+      "module": "src/stamina/typing.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 3"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 3.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.6,
+      "level": "high",
+      "module": "tests/__init__.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 0"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 0.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.8,
+      "level": "critical",
+      "module": "tests/test_config.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 12"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 12.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.6,
+      "level": "high",
+      "module": "tests/test_packaging.py",
+      "title": "Bus factor = 1 (single contributor)",
+      "evidence": [
+        "Primary contributor: Hynek Schlawack",
+        "Total contributors: 1",
+        "Module degree: 3"
+      ],
+      "remediation": "Cross-train team members on this module",
+      "drift_type": null,
+      "metrics": {
+        "bus_factor": 1.0,
+        "contributor_count": 1.0,
+        "module_degree": 3.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.39,
+      "level": "medium",
+      "module": "noxfile.py",
+      "title": "High churn combined with high complexity",
+      "evidence": [
+        "Churn rate: 0.248 commits/day",
+        "Cyclomatic complexity: 14",
+        "Total commits: 27"
+      ],
+      "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
+      "drift_type": null,
+      "metrics": {
+        "churn_rate": 0.24770642201834864,
+        "cyclomatic": 14.0,
+        "total_commits": 27.0,
+        "churn_score": 0.4954,
+        "cc_score": 0.28
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.36,
+      "level": "medium",
+      "module": "src/stamina/_config.py",
+      "title": "High churn combined with high complexity",
+      "evidence": [
+        "Churn rate: 0.150 commits/day",
+        "Cyclomatic complexity: 21",
+        "Total commits: 17"
+      ],
+      "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
+      "drift_type": null,
+      "metrics": {
+        "churn_rate": 0.1504424778761062,
+        "cyclomatic": 21.0,
+        "total_commits": 17.0,
+        "churn_score": 0.3009,
+        "cc_score": 0.42
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 1.0,
+      "level": "critical",
+      "module": "src/stamina/_core.py",
+      "title": "High churn combined with high complexity",
+      "evidence": [
+        "Churn rate: 10.333 commits/day",
+        "Cyclomatic complexity: 72",
+        "Total commits: 62"
+      ],
+      "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
+      "drift_type": null,
+      "metrics": {
+        "churn_rate": 10.333333333333334,
+        "cyclomatic": 72.0,
+        "total_commits": 62.0,
+        "churn_score": 1.0,
+        "cc_score": 1.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.27,
+      "level": "low",
+      "module": "tests/test_instrumentation.py",
+      "title": "High churn combined with high complexity",
+      "evidence": [
+        "Churn rate: 0.105 commits/day",
+        "Cyclomatic complexity: 17",
+        "Total commits: 11"
+      ],
+      "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
+      "drift_type": null,
+      "metrics": {
+        "churn_rate": 0.10476190476190476,
+        "cyclomatic": 17.0,
+        "total_commits": 11.0,
+        "churn_score": 0.2095,
+        "cc_score": 0.34
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 1.0,
+      "level": "critical",
+      "module": "tests/test_sync.py",
+      "title": "High churn combined with high complexity",
+      "evidence": [
+        "Churn rate: 4.167 commits/day",
+        "Cyclomatic complexity: 59",
+        "Total commits: 25"
+      ],
+      "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
+      "drift_type": null,
+      "metrics": {
+        "churn_rate": 4.166666666666667,
+        "cyclomatic": 59.0,
+        "total_commits": 25.0,
+        "churn_score": 1.0,
+        "cc_score": 1.0
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.29,
+      "level": "low",
+      "module": "tests/typing/api.py",
+      "title": "High churn combined with high complexity",
+      "evidence": [
+        "Churn rate: 0.162 commits/day",
+        "Cyclomatic complexity: 13",
+        "Total commits: 17"
+      ],
+      "remediation": "Prioritize refactoring to reduce complexity in frequently changed code",
+      "drift_type": null,
+      "metrics": {
+        "churn_rate": 0.1619047619047619,
+        "cyclomatic": 13.0,
+        "total_commits": 17.0,
+        "churn_score": 0.3238,
+        "cc_score": 0.26
+      }
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.9,
+      "level": "critical",
+      "module": "src/stamina/__init__.py",
+      "title": "Stale critical code path",
+      "evidence": [
+        "Last modified: 1240 days ago",
+        "Incoming dependencies: 5",
+        "Active contributors: 0"
+      ],
+      "remediation": "Schedule review and update of stale critical modules",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "knowledge",
+      "score": 0.55,
+      "level": "medium",
+      "module": "<project>",
+      "title": "Uneven contributor concentration",
+      "evidence": [
+        "Gini coefficient: 0.50",
+        "Modules analyzed: 21"
+      ],
+      "remediation": "Balance workload distribution across team members",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "operational",
+      "score": 0.5,
+      "level": "medium",
+      "module": "src/stamina/instrumentation/_hooks.py",
+      "title": "Exception handling anti-pattern",
+      "evidence": [
+        "Pattern: swallowed exception",
+        "Line 41: except ImportError:\n        pass\n"
+      ],
+      "remediation": "Use specific exception types and log errors",
+      "drift_type": null,
+      "metrics": null
+    },
+    {
+      "dimension": "operational",
+      "score": 0.5,
+      "level": "medium",
+      "module": "src/stamina/instrumentation/_hooks.py#02_get_default_hooks",
+      "title": "Exception handling anti-pattern",
+      "evidence": [
+        "Pattern: swallowed exception",
+        "Line 41: except ImportError:\n        pass\n"
+      ],
+      "remediation": "Use specific exception types and log errors",
+      "drift_type": null,
+      "metrics": null
+    }
+  ],
+  "drift_findings": [
+    {
+      "dimension": "architecture",
+      "score": 0.7,
+      "level": "high",
+      "module": "<specs>",
+      "title": "19 undocumented module(s)",
+      "evidence": [
+        "Modules without spec coverage: docs, docs/conf.py, noxfile.py, stamina, stamina/__init__.py, stamina/_config.py, stamina/_core.py, stamina/instrumentation, stamina/typing.py, tests"
+      ],
+      "remediation": "Create OpenSpec specifications for undocumented modules",
+      "drift_type": "undocumented_component",
+      "metrics": null
+    }
+  ],
+  "effort_estimates": [
+    {
+      "module": "docs/conf.py",
+      "kloc": 0.123,
+      "base_effort_pm": 0.2658,
+      "adjusted_effort_pm": 0.3456,
+      "maintainability_index": 48.15,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "noxfile.py",
+      "kloc": 0.082,
+      "base_effort_pm": 0.1737,
+      "adjusted_effort_pm": 0.3847,
+      "maintainability_index": 54.12,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "complexity": 1.2,
+        "coupling": 1.42,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/_config.py",
+      "kloc": 0.098,
+      "base_effort_pm": 0.2094,
+      "adjusted_effort_pm": 0.4853,
+      "maintainability_index": 48.62,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "complexity": 1.55,
+        "coupling": 1.15,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/_core.py",
+      "kloc": 0.536,
+      "base_effort_pm": 1.2469,
+      "adjusted_effort_pm": 14.0231,
+      "maintainability_index": 0.0,
+      "effort_category": "major",
+      "multipliers": {
+        "complexity": 4.1,
+        "coupling": 2.11,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/instrumentation/__init__.py",
+      "kloc": 0.024,
+      "base_effort_pm": 0.0478,
+      "adjusted_effort_pm": 0.0621,
+      "maintainability_index": 84.52,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/instrumentation/_data.py",
+      "kloc": 0.051,
+      "base_effort_pm": 0.1055,
+      "adjusted_effort_pm": 0.1371,
+      "maintainability_index": 66.73,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/instrumentation/_hooks.py",
+      "kloc": 0.052,
+      "base_effort_pm": 0.1077,
+      "adjusted_effort_pm": 0.1441,
+      "maintainability_index": 65.63,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "coupling": 1.03,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/instrumentation/_logging.py",
+      "kloc": 0.023,
+      "base_effort_pm": 0.0457,
+      "adjusted_effort_pm": 0.0594,
+      "maintainability_index": 85.43,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/instrumentation/_prometheus.py",
+      "kloc": 0.036,
+      "base_effort_pm": 0.0732,
+      "adjusted_effort_pm": 0.0951,
+      "maintainability_index": 74.89,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/instrumentation/_structlog.py",
+      "kloc": 0.019,
+      "base_effort_pm": 0.0374,
+      "adjusted_effort_pm": 0.0486,
+      "maintainability_index": 89.74,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "src/stamina/typing.py",
+      "kloc": 0.01,
+      "base_effort_pm": 0.0191,
+      "adjusted_effort_pm": 0.0248,
+      "maintainability_index": 104.04,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/conftest.py",
+      "kloc": 0.018,
+      "base_effort_pm": 0.0353,
+      "adjusted_effort_pm": 0.0459,
+      "maintainability_index": 90.2,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/test_async.py",
+      "kloc": 0.254,
+      "base_effort_pm": 0.5692,
+      "adjusted_effort_pm": 0.962,
+      "maintainability_index": 32.18,
+      "effort_category": "moderate",
+      "multipliers": {
+        "coupling": 1.3,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/test_config.py",
+      "kloc": 0.077,
+      "base_effort_pm": 0.1626,
+      "adjusted_effort_pm": 0.224,
+      "maintainability_index": 56.93,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "coupling": 1.06,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/test_instrumentation.py",
+      "kloc": 0.209,
+      "base_effort_pm": 0.4638,
+      "adjusted_effort_pm": 1.1315,
+      "maintainability_index": 32.8,
+      "effort_category": "moderate",
+      "multipliers": {
+        "complexity": 1.35,
+        "coupling": 1.39,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/test_structlog.py",
+      "kloc": 0.046,
+      "base_effort_pm": 0.0946,
+      "adjusted_effort_pm": 0.123,
+      "maintainability_index": 69.52,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/test_sync.py",
+      "kloc": 0.504,
+      "base_effort_pm": 1.1689,
+      "adjusted_effort_pm": 8.0732,
+      "maintainability_index": 3.75,
+      "effort_category": "major",
+      "multipliers": {
+        "complexity": 3.45,
+        "coupling": 1.54,
+        "knowledge": 1.3
+      }
+    },
+    {
+      "module": "tests/typing/api.py",
+      "kloc": 0.018,
+      "base_effort_pm": 0.0353,
+      "adjusted_effort_pm": 0.121,
+      "maintainability_index": 88.13,
+      "effort_category": "quick_win",
+      "multipliers": {
+        "complexity": 1.15,
+        "coupling": 2.29,
+        "knowledge": 1.3
+      }
+    }
+  ],
+  "summary": "",
+  "metadata": {
+    "project_context": {
+      "total_modules": 56,
+      "total_entities": 703,
+      "total_loc": 17631,
+      "total_commits": 782,
+      "unique_contributors": 9
+    }
+  }
+}
