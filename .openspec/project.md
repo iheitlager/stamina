@@ -33,6 +33,22 @@ The library is organized into 4 cohesive domains:
 | 3 | Configuration | [003-configuration](specs/003-configuration/spec.md) | Global toggle, testing mode, thread-safe state |
 | 4 | Instrumentation | [004-instrumentation](specs/004-instrumentation/spec.md) | Retry hooks, auto-detection chain, Prometheus/structlog/logging backends |
 
+## Architectural Decision Records
+
+| ADR | Title | Key Trade-off |
+|-----|-------|---------------|
+| [0001](adr/0001-wrap-tenacity.md) | Wrap Tenacity instead of building from scratch | Leverage maturity vs coupling to internals |
+| [0002](adr/0002-global-config-singleton.md) | Global singleton config with thread-safe Lock | Simplicity vs dependency injection |
+| [0003](adr/0003-instrumentation-auto-detection.md) | Auto-detection chain for instrumentation | Zero-config observability vs magic behavior |
+| [0004](adr/0004-backoff-hook-design.md) | Backoff hook design (bool/float/timedelta) | API simplicity vs overloaded return type |
+| [0005](adr/0005-lazy-hook-initialization.md) | Lazy hook initialization via RetryHookFactory | Zero import cost vs initialization complexity |
+| [0006](adr/0006-testing-mode-cap-semantics.md) | Testing mode with cap semantics | Override simplicity vs cap correctness |
+
+## Design Patterns
+
+See [patterns.md](patterns.md) for a reference of well-implemented design patterns:
+Null Object, Protocol-based Extension, Lazy Factory, Piggyback State, Context Manager as Return Value, Decorator with Callable Type Detection.
+
 ## Key Dependencies
 
 - **tenacity**: Underlying retry engine (wrapped, not exposed)
